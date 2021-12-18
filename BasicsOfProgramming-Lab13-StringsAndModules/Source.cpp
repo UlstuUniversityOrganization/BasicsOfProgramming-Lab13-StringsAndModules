@@ -5,21 +5,21 @@
 
 int main()
 {
-	printf("Choose what you want the program to do\n");
-	printf("	1. gstrlen\n");
-	printf("	2. gstrcpy\n");
-	printf("	3. gstrcat\n");
-	printf("	4. strcpm\n");
-	printf("	5. gstrchr\n");
-	printf("	6. gstrstr\n");
-	printf("	7. Quit the program\n");
-
 	int choice = 0;
-	scanf_s("%d", &choice);
-	
 	int loop = 1;
 	while (loop)
 	{
+		printf("\n-----------------------------\n");
+		printf("Choose what you want the program to do\n");
+		printf("	1. gstrlen\n");
+		printf("	2. gstrcpy\n");
+		printf("	3. gstrcat\n");
+		printf("	4. gstrcpm\n");
+		printf("	5. gstrchr\n");
+		printf("	6. gstrstr\n");
+		printf("	7. Quit the program\n");
+		scanf_s("%d", &choice);
+
 		switch (choice)
 		{
 		case 1:
@@ -38,7 +38,7 @@ int main()
 			scanf_s(" %[^\t\n]s", str1, MAX_SYMBOLS);
 			printf("Enter second string:");
 			scanf_s(" %[^\t\n]s", str2, MAX_SYMBOLS);
-			printf_s("Result:%s", gstrcpy(str1, str2));
+			printf_s("Result:%s\n", gstrcpy(str1, str2));
 			break;
 		}
 		case 3:
@@ -49,7 +49,7 @@ int main()
 			scanf_s(" %[^\t\n]s", str1, MAX_SYMBOLS);
 			printf("Enter second string:");
 			scanf_s(" %[^\t\n]s", str2, MAX_SYMBOLS);
-			printf_s("Result:%s", gstrcat(str1, str2));
+			printf_s("Result:%s\n", gstrcat(str1, str2));
 			break;
 		}
 		case 4:
@@ -60,7 +60,7 @@ int main()
 			scanf_s(" %[^\t\n]s", str1, MAX_SYMBOLS);
 			printf("Enter second string:");
 			scanf_s(" %[^\t\n]s", str2, MAX_SYMBOLS);
-			printf_s("Result:%d", strcpm(str1, str2));
+			printf_s("Result:%d\n", gstrcmp(str1, str2));
 			break;
 		}
 		case 5:
@@ -71,7 +71,7 @@ int main()
 			scanf_s(" %[^\t\n]s", str1, MAX_SYMBOLS);
 			printf("Enter char:");
 			scanf_s(" %c", (char*)&symbol, MAX_SYMBOLS);
-			printf_s("The first occurence of symbol is placed at %d", gstrlen(str1) - gstrlen(gstrchr(str1, symbol)) + 1);
+			printf_s("The first occurence of symbol is placed at %d\n", gstrlen(str1) - gstrlen(gstrchr(str1, symbol)) + 1);
 			break;
 		}
 		case 6:
@@ -84,7 +84,7 @@ int main()
 			scanf_s(" %[^\t\n]s", str2, MAX_SYMBOLS);
 			int strlen1 = gstrlen(str1);
 			int strlen2 = gstrlen(gstrstr(str1, str2));
-			printf_s("The first occurence of second string is placed at %d", strlen1 - strlen2 + 1);
+			printf_s("The first occurence of second string is placed at %d\n", strlen1 - strlen2 + 1);
 			break;
 		}
 		case 7:
@@ -93,7 +93,6 @@ int main()
 			break;
 		}
 	}
-
 	}
 	return 0;
 }

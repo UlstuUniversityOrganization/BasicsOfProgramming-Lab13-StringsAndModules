@@ -1,2 +1,6 @@
-﻿  Source.cpp
-  BasicsOfProgramming-Lab13-StringsAndModules.vcxproj -> E:\Университет\Основы алгоритмизации и программирования\Labs\BasicsOfProgramming-Lab13-StringsAndModules\Debug\BasicsOfProgramming-Lab13-StringsAndModules.exe
+﻿  gamma.cpp
+  Source.cpp
+  Создание кода...
+E:\TemporaryFolder\Лабы, исправленные на паре\BasicsOfProgramming-Lab13-StringsAndModules\BasicsOfProgramming-Lab13-StringsAndModules\gamma.cpp(47): warning C4715: gstrcmp: значение возвращается не при всех путях выполнения
+  LINK : не найден или не выполнена сборка E:\TemporaryFolder\Лабы, исправленные на паре\BasicsOfProgramming-Lab13-StringsAndModules\Debug\BasicsOfProgramming-Lab13-StringsAndModules.exe при последней инкрементной компоновке; выполняется полная компоновка
+  BasicsOfProgramming-Lab13-StringsAndModules.vcxproj -> E:\TemporaryFolder\Лабы, исправленные на паре\BasicsOfProgramming-Lab13-StringsAndModules\Debug\BasicsOfProgramming-Lab13-StringsAndModules.exe

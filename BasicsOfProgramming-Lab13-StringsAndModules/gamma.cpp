@@ -36,7 +36,7 @@ char* gstrcat(char* _Destination, const char* _Source)
 	return _Destination;
 }
 
-int strcpm(char const* _Str1, char const* _Str2)
+int gstrcmp(char const* _Str1, char const* _Str2)
 {
 	int i = 0;
 	while (_Str1[i] != '\0' && _Str2[i] != '\0' && _Str1[i] == _Str2[i]) i++;

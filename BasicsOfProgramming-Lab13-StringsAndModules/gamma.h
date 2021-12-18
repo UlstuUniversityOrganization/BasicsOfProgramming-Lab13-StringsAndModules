@@ -11,7 +11,7 @@ char* gstrcpy(char* _Destination, const char* _Source);
 char* gstrcat(char* _Destination, const char* _Source);
 
 // Compare _Str1 and _Str2
-int strcpm(char const* _Str1, char const* _Str2);
+int gstrcmp(char const* _Str1, char const* _Str2);
 
 // Finds a first occurence of str2 in str1
 char* gstrchr(const char* _String, int _Ch);
